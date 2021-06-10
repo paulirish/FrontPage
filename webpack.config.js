@@ -207,17 +207,17 @@ module.exports = {
      * plugins for the above
      */
     plugins: [
-        // Lint our JavaScript files
-        new ESLintPlugin({
-            failOnError: false, // TODO: flip back to true and address failures
-            extensions: ['js', 'js6'],
-            exclude: [
-                'node_modules',
-                '_common/jslibs',
-                ...STATE_JS6_FILES.slice(1) // lint just one of the states
-            ],
-            overrideConfig: require('./.eslintrc.js')
-        }),
+        // // Lint our JavaScript files
+        // new ESLintPlugin({
+        //     failOnError: false, // TODO: flip back to true and address failures
+        //     extensions: ['js', 'js6'],
+        //     exclude: [
+        //         'node_modules',
+        //         '_common/jslibs',
+        //         ...STATE_JS6_FILES.slice(1) // lint just one of the states
+        //     ],
+        //     overrideConfig: require('./.eslintrc.js')
+        // }),
 
         // CSS output from the CSS + Sass handlers above
         new MiniCssExtractPlugin({
